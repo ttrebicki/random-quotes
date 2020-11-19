@@ -2,7 +2,7 @@
   "name": "random-quotes",
   "version": "0.1.0",
   "private": true,
-  "hompage": "http://ttrebicki.github.io/random-quote",
+  "homepage": "http://ttrebicki.github.io/random-quotes",
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
