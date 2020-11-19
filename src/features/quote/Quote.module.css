@@ -1,0 +1,107 @@
+.Quote {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 3rem 3rem 3rem 3rem;
+  left: 0;
+  margin: auto;
+  transition: 1s;
+  opacity: 0;
+}
+
+.Quote * {
+  margin: 0 0 1rem 0;
+}
+
+
+.Text {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+  overflow-y: scroll;
+}
+
+.Author {
+  font-size: 2rem;
+  font-weight: 600;
+  background: #f55;
+  color: #111;
+}
+
+.NewQuote, .TweetQuote {
+  background: #111;
+  outline: 1px solid white;
+  padding: 1.5rem;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: light;
+  display: inline-block;
+  text-decoration: none;
+  width: 22vw;
+  text-align: center;
+}
+
+#NewQuote:hover,
+#TweetQuote:hover {
+  color: #111;
+  width: 25vw;
+}
+
+#NewQuote:hover {
+  background: #f55;
+  outline: 1px solid #f55;
+}
+
+#TweetQuote:hover {
+  background: #1DA1F2;
+  outline: 1px solid #1DA1F2;
+}
+
+.random-image {
+  opacity: 1;
+
+}
+
+@keyframes hueImage {
+  0% {
+    filter: hue-rotate(180deg) contrast(100);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.random-image,
+.random-image-shadow
+ {
+  animation: hueImage;
+  animation-iteration-count: infinite;
+  animation-duration: 0.3s;
+  width: 40vw;
+}
+.random-image-shadow {
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .Text, .NewQuote, .TweetQuote {
+    font-size: 1rem;
+  }
+  .Author {
+    font-size: 0.75rem;
+  }
+}
+
+.NewQuote, .TweetQuote {
+  margin: 0;
+}
