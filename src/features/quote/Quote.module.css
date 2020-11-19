@@ -54,6 +54,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0 0.5rem 0 0;
 }
 
 .NewQuote:hover,
@@ -103,25 +104,38 @@
 */
 @media only screen and (max-width: 1024px) {
   .NewQuote, .TweetQuote {
-    width: 35vw;
+    width: 30vw;
   }
   .NewQuote:hover, .TweetQuote:hover {
-    width: 37vw;
+    width: 35vw;
   }
 
   .Text, .NewQuote, .TweetQuote {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .Author {
     font-size: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .Text, .NewQuote, .TweetQuote {
+@media only screen and (max-width: 767px) {
+  .Text{
     font-size: 1.5rem;
   }
-  .Author {
+
+  .Author,
+  .NewQuote,
+  .TweetQuote  {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .NewQuote, .TweetQuote {
+    width: 25vw;
+    font-size: 0.75rem;
+  }
+  .NewQuote:hover, .TweetQuote:hover {
+    width: 30vw;
   }
 }
