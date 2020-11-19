@@ -23,6 +23,7 @@
   text-align: left;
   font-size: 3rem;
   font-weight: 600;
+  height: 40vh;
   overflow-y: scroll;
 }
 
@@ -35,8 +36,9 @@
 
 .NewQuote, .TweetQuote {
   background: #111;
+  border: 0px;
   outline: 1px solid white;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   color: white;
   transition: 0.5s;
   cursor: pointer;
@@ -44,27 +46,33 @@
   font-weight: light;
   display: inline-block;
   text-decoration: none;
-  width: 22vw;
-  text-align: center;
-}
-
-#NewQuote:hover,
-#TweetQuote:hover {
-  color: #111;
   width: 25vw;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#NewQuote:hover {
+.NewQuote:hover,
+.TweetQuote:hover {
+  color: #111;
+  width: 30vw;
+}
+
+.NewQuote:hover {
   background: #f55;
   outline: 1px solid #f55;
 }
 
-#TweetQuote:hover {
+.TweetQuote:hover {
   background: #1DA1F2;
   outline: 1px solid #1DA1F2;
 }
-
-.random-image {
+/*
+.randomImage {
   opacity: 1;
 
 }
@@ -78,30 +86,42 @@
   }
 }
 
-.random-image,
-.random-image-shadow
+.randomImage,
+.randomImageShadow
  {
   animation: hueImage;
   animation-iteration-count: infinite;
   animation-duration: 0.3s;
-  width: 40vw;
+  height: 40vh;
 }
-.random-image-shadow {
+.randomImageShadow {
   position: absolute;
   left: 4rem;
   top: 4rem;
   opacity: 0.7;
 }
+*/
+@media only screen and (max-width: 1024px) {
+  .NewQuote, .TweetQuote {
+    width: 35vw;
+  }
+  .NewQuote:hover, .TweetQuote:hover {
+    width: 40vw;
+  }
 
-@media only screen and (max-width: 768px) {
   .Text, .NewQuote, .TweetQuote {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .Author {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
   }
 }
 
-.NewQuote, .TweetQuote {
-  margin: 0;
+@media only screen and (max-width: 768px) {
+  .Text, .NewQuote, .TweetQuote {
+    font-size: 1.5rem;
+  }
+  .Author {
+    font-size: 1rem;
+  }
 }

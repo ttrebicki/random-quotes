@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import React, {useEffect, useState } from 'react';
-import {randomImage} from './randomImage';
+// import {randomImage} from './randomImage';
 
 const getRandomQuoteIndex = (min, max) => {
   return Math.floor(Math.random() * (max-min) + min);
@@ -17,7 +16,7 @@ export const randomQuote = createSlice({
       {quote: 'Human beings have a fundamental desire for wholeness satisfied through their attachments to each other, their environment, and with Creation.', author: 'Christina Grof'},
       {quote: 'The pure always act from love. The damned always act from love. The truth is an act of love.', author: 'James Newell Osterberg, Jr.'},
       {quote: 'The very tissue of spatial experience alters, conjoining proximity and distance in ways that have few parallels in prior ages.', author: 'Anthony Giddens'},
-      {quote: randomImage(), author: ''}
+      //{quote: randomImage(), author: ''}
     ]
   },
   reducers: {

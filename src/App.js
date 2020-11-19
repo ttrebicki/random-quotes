@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    document.querySelector('.Quote').style.opacity = "1";
+    document.querySelector('#quote-box').style.opacity = "1";
     dispatch(newQuote());
   })
 
